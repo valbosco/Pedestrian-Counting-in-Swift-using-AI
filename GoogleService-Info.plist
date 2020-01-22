@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>194419328709-oa76a65gaes353bl5nsc2hmtrk4c83ae.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.194419328709-oa76a65gaes353bl5nsc2hmtrk4c83ae</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB5UGrTJqYUAG9XgYxgtEluujz2uhmzf8c</string>
+	<key>GCM_SENDER_ID</key>
+	<string>194419328709</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>net.codextreme.RTA</string>
+	<key>PROJECT_ID</key>
+	<string>rta-smart-pedestrian-app</string>
+	<key>STORAGE_BUCKET</key>
+	<string>rta-smart-pedestrian-app.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:194419328709:ios:5724e2db6259ae1c</string>
+	<key>DATABASE_URL</key>
+	<string>https://rta-smart-pedestrian-app.firebaseio.com</string>
+</dict>
+</plist>

@@ -13,9 +13,16 @@
 		8D24DE86226CA3A30061D33B /* RTA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8D24DE84226CA3A30061D33B /* RTA.xcdatamodeld */; };
 		8D24DE88226CA3A70061D33B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D24DE87226CA3A70061D33B /* Assets.xcassets */; };
 		8D24DE8B226CA3A70061D33B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D24DE89226CA3A70061D33B /* LaunchScreen.storyboard */; };
+		8D814504226E7CF9006328F7 /* person.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8D814503226E7CF9006328F7 /* person.mlmodel */; };
+		8D814506226EE1F7006328F7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D814505226EE1F7006328F7 /* GoogleService-Info.plist */; };
+		8D9D30A9226D6C9F007CB1E3 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D30A7226D67CC007CB1E3 /* Resnet50.mlmodel */; };
+		8D9D30AB226D9F83007CB1E3 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8D9D30AA226D9F83007CB1E3 /* Inceptionv3.mlmodel */; };
+		FB626C7E524DE5DFBDB25F25 /* Pods_RTA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA24BBBF4AF15E828A14D71 /* Pods_RTA.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1CA24BBBF4AF15E828A14D71 /* Pods_RTA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RTA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F53C7CF1C47CBE71F116BBB /* Pods-RTA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTA.release.xcconfig"; path = "Pods/Target Support Files/Pods-RTA/Pods-RTA.release.xcconfig"; sourceTree = "<group>"; };
 		8D24DE7A226CA3A30061D33B /* RTA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D24DE7D226CA3A30061D33B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D24DE7F226CA3A30061D33B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +31,11 @@
 		8D24DE87226CA3A70061D33B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D24DE8A226CA3A70061D33B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D24DE8C226CA3A70061D33B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D814503226E7CF9006328F7 /* person.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = person.mlmodel; path = ../../person.mlmodel; sourceTree = "<group>"; };
+		8D814505226EE1F7006328F7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8D9D30A7226D67CC007CB1E3 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
+		8D9D30AA226D9F83007CB1E3 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		CB47895DDBD9C0C4531A6754 /* Pods-RTA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RTA/Pods-RTA.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB626C7E524DE5DFBDB25F25 /* Pods_RTA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A43CD20E3EBC0867218AF35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CA24BBBF4AF15E828A14D71 /* Pods_RTA.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		312431AEE80F9893DBD44BF7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB47895DDBD9C0C4531A6754 /* Pods-RTA.debug.xcconfig */,
+				2F53C7CF1C47CBE71F116BBB /* Pods-RTA.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8D24DE71226CA3A30061D33B = {
 			isa = PBXGroup;
 			children = (
+				8D814505226EE1F7006328F7 /* GoogleService-Info.plist */,
 				8D24DE7C226CA3A30061D33B /* RTA */,
 				8D24DE7B226CA3A30061D33B /* Products */,
+				312431AEE80F9893DBD44BF7 /* Pods */,
+				1A43CD20E3EBC0867218AF35 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,10 +89,13 @@
 		8D24DE7C226CA3A30061D33B /* RTA */ = {
 			isa = PBXGroup;
 			children = (
+				8D814503226E7CF9006328F7 /* person.mlmodel */,
+				8D9D30AA226D9F83007CB1E3 /* Inceptionv3.mlmodel */,
 				8D24DE7D226CA3A30061D33B /* AppDelegate.swift */,
 				8D24DE7F226CA3A30061D33B /* ViewController.swift */,
 				8D24DE81226CA3A30061D33B /* Main.storyboard */,
 				8D24DE87226CA3A70061D33B /* Assets.xcassets */,
+				8D9D30A7226D67CC007CB1E3 /* Resnet50.mlmodel */,
 				8D24DE89226CA3A70061D33B /* LaunchScreen.storyboard */,
 				8D24DE8C226CA3A70061D33B /* Info.plist */,
 				8D24DE84226CA3A30061D33B /* RTA.xcdatamodeld */,
@@ -74,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D24DE8F226CA3A70061D33B /* Build configuration list for PBXNativeTarget "RTA" */;
 			buildPhases = (
+				DD6015953BFF6E2F5A70FB95 /* [CP] Check Pods Manifest.lock */,
 				8D24DE76226CA3A30061D33B /* Sources */,
 				8D24DE77226CA3A30061D33B /* Frameworks */,
 				8D24DE78226CA3A30061D33B /* Resources */,
+				AAC859D8C396B257AE828E30 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D24DE8B226CA3A70061D33B /* LaunchScreen.storyboard in Resources */,
+				8D814506226EE1F7006328F7 /* GoogleService-Info.plist in Resources */,
 				8D24DE88226CA3A70061D33B /* Assets.xcassets in Resources */,
 				8D24DE83226CA3A30061D33B /* Main.storyboard in Resources */,
 			);
@@ -133,13 +172,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AAC859D8C396B257AE828E30 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RTA/Pods-RTA-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RTA/Pods-RTA-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD6015953BFF6E2F5A70FB95 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RTA-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8D24DE76226CA3A30061D33B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D9D30AB226D9F83007CB1E3 /* Inceptionv3.mlmodel in Sources */,
 				8D24DE80226CA3A30061D33B /* ViewController.swift in Sources */,
 				8D24DE86226CA3A30061D33B /* RTA.xcdatamodeld in Sources */,
+				8D814504226E7CF9006328F7 /* person.mlmodel in Sources */,
+				8D9D30A9226D6C9F007CB1E3 /* Resnet50.mlmodel in Sources */,
 				8D24DE7E226CA3A30061D33B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,8 +371,10 @@
 		};
 		8D24DE90226CA3A70061D33B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB47895DDBD9C0C4531A6754 /* Pods-RTA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J6U2J2XM8T;
 				INFOPLIST_FILE = RTA/Info.plist;
@@ -295,6 +384,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.codextreme.RTA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,8 +392,10 @@
 		};
 		8D24DE91226CA3A70061D33B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F53C7CF1C47CBE71F116BBB /* Pods-RTA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J6U2J2XM8T;
 				INFOPLIST_FILE = RTA/Info.plist;
@@ -313,6 +405,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.codextreme.RTA;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
